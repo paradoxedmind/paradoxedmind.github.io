@@ -19,12 +19,15 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-list_pages = true
+list_pages = false
 toc = true
 
 header_nav = [
   {url = "/", name_en = "Home"},
+  { url = "https://github.com/paradoxedmind", name_en = "Github" },
   {url = "/blog", name_en = "Blog"},
+  { url = "/about", name_en = "About" },
+  # { url = "/journal", name_en = "/journal/", name_fr = "/journal/" },
 ]
 
 twitter_card = false

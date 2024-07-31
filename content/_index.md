@@ -3,4 +3,4 @@ title = "Paradoxed"
 +++
 
 
-# Hello World.
+# Hello!
