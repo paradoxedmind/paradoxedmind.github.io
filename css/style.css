@@ -1,0 +1,153 @@
+#nav-bar {
+  padding: .625rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  gap: .50rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between
+}
+
+
+/* a:active { */
+/* background-color: #ffffff; */
+/* color: var(--link); */
+/* } */
+
+a,
+a:visited {
+  color: var(--text-light);
+  /* border-bottom: 1px solid #1e1e1e; */
+}
+
+a:hover {
+  background-color: var(--bg);
+  color: var(--link);
+}
+
+a[href*="/"]::after,
+a[rel*=external] {
+  content: " " url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='14'%20height='14'%20fill='none'%20stroke='%23fbb000'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E");
+
+}
+
+
+a[href*="https://"]::after,
+a[rel*=external] {
+  content: " " url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20class='i-external'%20viewBox='0%200%2032%2032'%20width='14'%20height='14'%20fill='none'%20stroke='%23ffff'%20stroke-linecap='round'%20stroke-linejoin='round'%20stroke-width='9.38%'%3E%3Cpath%20d='M14%209%20L3%209%203%2029%2023%2029%2023%2018%20M18%204%20L28%204%2028%2014%20M28%204%20L14%2018'/%3E%3C/svg%3E");
+}
+
+hr {
+  border: 0.11rem solid;
+}
+
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#footer-container {
+  /* margin-bottom: 0.5rem; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  animation: intro .3s both;
+  animation-delay: .15s
+}
+
+
+.accent-data {
+  color: var(--accent);
+}
+
+.theme-transition {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.tags-data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-end
+}
+
+.title-list li {
+  margin-bottom: .375rem;
+}
+
+/* icons settings */
+.icons {
+  width: 1.3rem;
+  height: 1.3rem;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--text);
+  fill: var(--text);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icons:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+/* footnotes */
+.footnote-definition {
+  margin: 0 0 0 .125rem;
+}
+
+.footnote-definition-label {
+  color: var(--accent);
+}
+
+.footnote-definition p {
+  display: inline;
+  margin: .625rem 0 0 .625rem;
+}
+
+/* general classes */
+.no-style {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0
+}
+
+.no-style:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+.center {
+  text-align: center;
+}
+
+.center img {
+  display: block;
+  margin: 1rem auto;
+}
+
+.float-right {
+  float: right
+}
+
+.float-left {
+  float: left
+}
+
+/* shortcodes css */
+.webring {
+  margin: .375rem;
+}
